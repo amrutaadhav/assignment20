@@ -24,10 +24,10 @@ body{
     color: black;
 }
 .active-menu{
-    background-color: #ff99c2;
+    background-color: #4d94ff;
 }
 .menu-items:hover{
-    background-color:#ff99c2;
+    background-color:#4d94ff;
 }
 .menu-icons{
     height: 20px;
@@ -41,6 +41,7 @@ body{
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    color:blue;
 }
 .bottom-navigation-bar{
     position: fixed;
@@ -63,6 +64,34 @@ body{
     background-color: #ff99c2;
 }
 
-
+ /* small devices */
+ @media screen and (max-width: 599px){
+    .sidebar{
+        display: none;
+    }
+    .bottom-navigation-bar{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+ /* normal devices */
+ @media screen and (min-width: 600px) and (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+    .bottom-navigation-bar{
+        display: flex;
+        justify-content: space-around;
+    }
+ }
+    
+/* tablets */
+@media screen and (min-width:769px) and (max-width:992px){
+    
+}
+     /* large device */
+@media screen and (min-width:993px) and (max-width:1200px){
+    
+}
 
 
